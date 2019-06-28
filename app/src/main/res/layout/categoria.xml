@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent" android:background="#5FDCEC">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/textView4"
+            android:layout_marginTop="56dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            tools:text="Dificulty"/>
+    <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:checkedButton="Dificulty"
+            android:id="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView4"
+    >
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/easy" android:layout_weight="1"
+                tools:text="Easy"/>
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/medium" android:layout_weight="1"
+                tools:text="Medium"/>
+        <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                tools:text="Hardcore" android:id="@+id/hard"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:text="Category"/>
+    <RadioGroup
+            android:layout_width="377dp"
+            android:layout_height="327dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/radioGroup2" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="vertical">
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/9"
+                        tools:text="General Knowledge"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/29" tools:text="Comics"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/30" tools:text="Gadgets"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/31"
+                        tools:text="Japonese Anime & Manga"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/32"
+                        tools:text="Cartoon & Animations"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/10" tools:text="Books"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/11" tools:text="Film"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/12" tools:text="Music"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/13"
+                        tools:text="Musicals & Theatres"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/14" tools:text="Television"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/15" tools:text="Video Games"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/16" tools:text="Bord Games"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/17"
+                        tools:text="Science & Nature"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/18"
+                        tools:text="Science: Computers"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/19"
+                        tools:text="Science: Mathematics"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/20" tools:text="Mythology"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/21" tools:text="Sports"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/22" tools:text="Geography"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/23" tools:text="History"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/24" tools:text="Politics"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/25" tools:text="Celebrities"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/26" tools:text="Art"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/27" tools:text="Animals"/>
+                <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/28" tools:text="Vehicles"/>
+            </LinearLayout>
+        </ScrollView>
+    </RadioGroup>
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp" app:srcCompat="@drawable/check"
+            android:id="@+id/confirmCategoria" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="124dp" android:layout_marginRight="124dp"/>
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp" app:srcCompat="@drawable/return"
+            android:id="@+id/returnCategoria" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginStart="124dp" app:layout_constraintTop_toBottomOf="@+id/radioGroup2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
