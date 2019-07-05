@@ -6,15 +6,16 @@
                                                    android:layout_height="match_parent" android:background="#5FDCEC">
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
             android:id="@+id/textView4"
             android:layout_marginTop="56dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            tools:text="Dificulty"/>
+            tools:text="Dificulty" android:textSize="30dp" android:gravity="center_horizontal"
+            android:textColor="#FFFFFF" android:textStyle="bold|italic"/>
     <RadioGroup
             android:layout_width="0dp"
             android:layout_height="wrap_content" android:checkedButton="Dificulty"
@@ -39,7 +40,7 @@
                 tools:text="Hardcore" android:id="@+id/hard"/>
     </RadioGroup>
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView3"
             android:layout_marginEnd="8dp"
@@ -47,7 +48,8 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-            tools:text="Category"/>
+            tools:text="Category" android:textSize="30dp" android:gravity="center_horizontal"
+            android:textColor="#FFFFFF" android:textStyle="bold|italic"/>
     <RadioGroup
             android:layout_width="377dp"
             android:layout_height="327dp"
